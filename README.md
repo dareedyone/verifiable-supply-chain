@@ -121,3 +121,15 @@ The following 1 attestation matched the policy criteria
   - Signer repo:.... dareedyone/verifiable-supply-chain
   - Signer workflow: .github/workflows/build-attest-sign.yml@refs/heads/main
 ```
+
+## OpenSSF Scorecard
+
+This repo includes a Scorecard workflow (`.github/workflows/scorecard.yml`) to assess supply-chain/security hygiene (e.g., pinned actions, token permissions, branch protection signals).
+
+You can run it from GitHub Actions:
+- **Actions** → **scorecard** → **Run workflow**
+
+If SARIF upload is enabled for your repo, results appear under:
+- **Security** → **Code scanning**
+
+If Code Scanning/SARIF upload is not available (account/org settings), the workflow still runs and produces a SARIF file in the workflow run artifacts.
