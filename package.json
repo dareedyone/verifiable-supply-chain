@@ -1,0 +1,12 @@
+{
+  "name": "verifiable-supplychain-demo",
+  "version": "0.1.0",
+  "description": "Demo: provenance + GitHub attestations + cosign + Scorecard",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
